@@ -1,0 +1,117 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para el nombre del producto -->
+    <EditText
+        android:id="@+id/nombre_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del producto"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Campo para la descripción del producto -->
+    <EditText
+        android:id="@+id/descripcion_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción del producto"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Campo para el precio del producto -->
+    <EditText
+        android:id="@+id/precio_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio del producto"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Campo para la unidad del producto (un carácter) -->
+    <EditText
+        android:id="@+id/unidad_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unidad del producto"
+        android:maxLength="1"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Campo para la cantidad -->
+    <EditText
+        android:id="@+id/cantidad_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Campo para el estado del producto -->
+    <EditText
+        android:id="@+id/estado_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado del producto"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Campo para la foto (URL o ruta de la imagen) -->
+    <EditText
+        android:id="@+id/foto_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Foto del producto (URL)"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <Spinner
+        android:id="@+id/spinner_inventario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinner_subcategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinner_catalogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinner_nota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!-- Botón para guardar el producto -->
+    <Button
+        android:id="@+id/btn_guardar_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Producto"
+        android:padding="12dp"
+        android:textSize="16sp" />
+</LinearLayout>
